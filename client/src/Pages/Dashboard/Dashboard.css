@@ -1,0 +1,84 @@
+.dash-body{
+    height: 1vh;
+    width: 100%;
+}
+
+#nav {
+    width: 100%;
+    height: 100px;
+    background: rgb(255,80,80);
+    background: linear-gradient(207deg, rgba(255,80,80,1) 0%, rgba(255,182,160,1) 100%);
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#nav #home{
+    position: absolute;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    transition: all 500ms ease-in-out;
+    left: 20px;
+}
+
+#nav #home:hover{
+    background-color: transparent !important;
+}
+
+#nav #logo{
+    width: 50px;
+    height: 50px;
+}
+
+#account {
+    position: absolute;
+    width: 135px;
+    right: 1%;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#acc-btn{
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 13px;
+}
+
+#acc-btn img{
+    filter: invert(1);
+    width: 40px;
+    height: 40px;
+}
+
+#logout-btn{
+    border: 0;
+    width: 50px;
+    height: 50px;
+    transition: all 500ms ease-in-out;
+}
+
+#logout-btn:hover{
+    background-color: transparent !important;
+}
+
+#logout-icon {
+    max-width: 25px;
+    max-height: 25px;
+    filter: invert(1);
+}
+
+.pageWrapper {
+    height: calc(100vh - 100px);
+    width: 100%;
+}

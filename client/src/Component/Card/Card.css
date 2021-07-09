@@ -1,0 +1,71 @@
+.card-body{
+    border-radius: 25px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(207deg, rgb(255, 121, 121) 0%, rgb(255, 207, 192) 100%);
+    color: white;
+}
+
+.card-user{
+    font-weight: lighter;
+}
+
+.card-btn {
+    height: 40px;
+    transform: scale(1);
+    animation: grow 0.3s ease-in;
+}
+
+.card-input {
+    height: 40px;
+    width: 90%;
+    animation: grow 0.3s ease-in;
+}
+
+.card-input input {
+    font-size: 13px;
+    text-align: center;
+}
+
+.card-cancel-edit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.edit, .cancel{
+    width: 40%;
+}
+
+.card-input input::-webkit-calendar-picker-indicator{
+    margin: 0;
+    filter: invert(1);
+}
+
+.card-input:focus-within input::-webkit-calendar-picker-indicator{
+    filter: invert(0);
+}
+
+.true{
+    background: white;
+    border-color: transparent;
+    color: rgb(255, 96, 96);
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}

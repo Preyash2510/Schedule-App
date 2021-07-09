@@ -1,0 +1,6 @@
+#users{
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 300px));
+    grid-auto-rows: 350px;
+}

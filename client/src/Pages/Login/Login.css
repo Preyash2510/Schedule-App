@@ -1,0 +1,122 @@
+#login-body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 75px;
+    background: rgb(255,80,80);
+    background: linear-gradient(207deg, rgba(255,80,80,1) 0%, rgba(255,182,160,1) 100%);
+    animation: fade 0.9s ease-in;
+}
+
+#login-section{
+    height: 600px;
+    width: 800px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .30);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+#slider{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#slider img {
+    height: auto;
+    width: 35%;
+}
+
+#slider-button {
+    color: rgb(255, 96, 96);
+    border-color: rgb(255, 96, 96);
+}
+
+.left {
+    transform: translateX(100%);
+    animation: slide-right 0.3s ease-in;
+}
+
+.right {
+    transform: translateX(0);
+    animation: slide-left 0.3s ease-in;
+}
+
+.sides{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sign-side{
+    height: 100%;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#login-side{
+    top: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.login-error {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    min-height: 50px;
+    color: rgba(255,80,80,1);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-left {
+    from{
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
